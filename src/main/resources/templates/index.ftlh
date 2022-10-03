@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
-[#--<body style="background-image: url(${obrazky});">--]
-<body style="background-image: url(/static/images/image-${obrazky}.jpg);">
-[#--<body style="background-image: url(https://source.unsplash.com/RFHFV7lVQBY/1600x900);">--]
-[#--<body style="background-image: url(static/images/image-${obrazky}.jpg);">--]
-[#--<body style="background-image: url(${obrazky});">--]
+<body style="background-image: url(/images/image-${obrazky}.jpg);">
 <blockquote><strong>${citaty}</blockquote>
 </body>
 </html>

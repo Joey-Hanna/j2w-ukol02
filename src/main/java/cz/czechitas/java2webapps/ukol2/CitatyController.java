@@ -4,8 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 import java.util.Random;
 
@@ -26,14 +24,8 @@ public class CitatyController {
             "Programmer (noun.): A machine that turns coffee into code.",
             "Real programmers count from 0.");
 
-    /*private static final List<String> obrazky = List.of(
-            "https://source.unsplash.com/Lc2R_w0zvtA/1600x900",
-            "https://source.unsplash.com/oTcaW8Pqv3U/1600x900"
-    );*/
-
 
     int rozmerSeznamuCitaty = citaty.size();
-  /*  int rozmerSeznamuObrazky = obrazky.size();*/
 
     private final Random random = new Random();
 
@@ -48,24 +40,6 @@ public class CitatyController {
 
         return modelAndView;
     }
-
-   /* public ModelAndView obrazky() {
-        String nahodnyObrazek = obrazky.get(random.nextInt(rozmerSeznamuObrazky) +1);
-
-        ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("obrazky", nahodnyObrazek);
-        return modelAndView;
-    }*/
-
-
-    /*private ModelAndView obrazky() {
-        int nahodnyObrazek = random.nextInt(7) + 1;
-
-        ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("obrazek", nahodnyObrazek);
-        return modelAndView;
-
-    }*/
 
 
 
