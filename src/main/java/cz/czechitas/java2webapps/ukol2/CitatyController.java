@@ -30,13 +30,13 @@ public class CitatyController {
     private final Random random = new Random();
 
     @GetMapping("/")
-    public ModelAndView citatyObrazky() {
+    public ModelAndView zobrazitCitatyObrazky() {
         String nahodnyCitat = citaty.get(random.nextInt(rozmerSeznamuCitaty));
-        int nahodnyObrazek = random.nextInt(7) + 1;
+        int cisloNahodnehoObrazku = random.nextInt(7) + 1;
 
         ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("citaty", nahodnyCitat);
-        modelAndView.addObject("obrazky", nahodnyObrazek);
+        modelAndView.addObject("citat", nahodnyCitat);
+        modelAndView.addObject("obrazek", cisloNahodnehoObrazku);
 
         return modelAndView;
     }
