@@ -38,11 +38,14 @@ public class CitatyController {
     private final Random random = new Random();
 
     @GetMapping("/")
-    public ModelAndView citaty() {
+    public ModelAndView citatyObrazky() {
         String nahodnyCitat = citaty.get(random.nextInt(rozmerSeznamuCitaty));
+        int nahodnyObrazek = random.nextInt(7) + 1;
 
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("citaty", nahodnyCitat);
+        modelAndView.addObject("obrazky", nahodnyObrazek);
+
         return modelAndView;
     }
 
